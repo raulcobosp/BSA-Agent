@@ -1,0 +1,546 @@
+<!DOCTYPE html><html><head>
+      <title>BSA_GUIDE_ES</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\david\.antigravity\extensions\shd101wyy.markdown-preview-enhanced-0.8.20-universal\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\david\.antigravity\extensions\shd101wyy.markdown-preview-enhanced-0.8.20-universal\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="nubiral-bsa--guía-de-usuario">Nubiral BSA – Guía de Usuario </h1>
+<blockquote>
+<p><strong>Manual Paso a Paso para Generación de Propuestas Técnicas</strong><br>
+Versión 2.0 | Diciembre 2024</p>
+</blockquote>
+<hr>
+<h2 id="-tabla-de-contenidos">📖 Tabla de Contenidos </h2>
+<ol>
+<li><a href="#1-primeros-pasos">Primeros Pasos</a></li>
+<li><a href="#2-crear-una-nueva-propuesta">Crear una Nueva Propuesta</a></li>
+<li><a href="#3-entendiendo-el-pipeline-de-agentes">Entendiendo el Pipeline de Agentes</a></li>
+<li><a href="#4-trabajando-con-resultados">Trabajando con Resultados</a></li>
+<li><a href="#5-gesti%C3%B3n-de-sesiones">Gestión de Sesiones</a></li>
+<li><a href="#6-funciones-avanzadas">Funciones Avanzadas</a></li>
+<li><a href="#7-mejores-pr%C3%A1cticas">Mejores Prácticas</a></li>
+<li><a href="#8-soluci%C3%B3n-de-problemas">Solución de Problemas</a></li>
+</ol>
+<hr>
+<h2 id="1-primeros-pasos">1. Primeros Pasos </h2>
+<h3 id="11-vista-general-de-la-interfaz">1.1 Vista General de la Interfaz </h3>
+<div class="mermaid">graph TB
+    subgraph Header["🔝 Cabecera Global"]
+        SB[📁 Botón Sesiones]
+        LOGO[Logo Nubiral BSA]
+        STATUS[Badge Sesión Activa]
+        SAVE[💾 Botón Guardar]
+    end
+
+    subgraph Main["📱 Área de Contenido Principal"]
+        INPUT[Paso 1: Formulario de Entrada]
+        PROCESS[Paso 2: Consola de Agente]
+        RESULT[Paso 3: Visor de Resultados]
+    end
+
+    subgraph Sidebar["📂 Barra Lateral Izquierda"]
+        SESSIONS[Lista de Sesiones]
+        NEW[Nueva Propuesta]
+    end
+</div><h3 id="12-primera-ejecución">1.2 Primera Ejecución </h3>
+<ol>
+<li>Abrir la aplicación en <code>http://localhost:5173</code></li>
+<li>Verás el <strong>Formulario de Entrada</strong> (Paso 1)</li>
+<li>La barra lateral de <strong>Sesiones</strong> (📁) es accesible desde la esquina superior izquierda</li>
+</ol>
+<hr>
+<h2 id="2-crear-una-nueva-propuesta">2. Crear una Nueva Propuesta </h2>
+<h3 id="21-campos-del-formulario-de-entrada">2.1 Campos del Formulario de Entrada </h3>
+<div class="mermaid">flowchart TD
+    A[📝 Formulario de Entrada] --&gt; B[Nombre de Empresa Cliente]
+    A --&gt; C[Descripción del Caso de Negocio]
+    A --&gt; D[HyperScaler Objetivo]
+    A --&gt; E[Idioma de la Propuesta]
+    A --&gt; F[Configuración del Agente]
+
+    F --&gt; G[Modelo de Razonamiento]
+    F --&gt; H[Modelo de Imágenes]
+    F --&gt; I[Densidad de Contexto]
+    F --&gt; J[Delay de API]
+</div><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Descripción</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nombre Empresa</strong></td>
+<td>Organización cliente</td>
+<td>"Acme Corporation"</td>
+</tr>
+<tr>
+<td><strong>Caso de Negocio</strong></td>
+<td>Descripción del problema/necesidad</td>
+<td>"Migrar facturación legacy a microservicios..."</td>
+</tr>
+<tr>
+<td><strong>HyperScaler</strong></td>
+<td>Plataforma cloud objetivo</td>
+<td>AWS, Azure, GCP, OCI</td>
+</tr>
+<tr>
+<td><strong>Idioma</strong></td>
+<td>Idioma de salida</td>
+<td>Inglés, Español, Portugués, Francés, Alemán</td>
+</tr>
+<tr>
+<td><strong>Modelo Razonamiento</strong></td>
+<td>Modelo IA para texto</td>
+<td>Gemini 3.0 Pro (Thinking) o Flash (Rápido)</td>
+</tr>
+<tr>
+<td><strong>Modelo Imágenes</strong></td>
+<td>Modelo IA para visuales</td>
+<td>Gemini 2.5 Flash o 3.0 Pro</td>
+</tr>
+<tr>
+<td><strong>Densidad Contexto</strong></td>
+<td>Filtrado de información</td>
+<td>Baja (resumen), Media, Alta (detallado)</td>
+</tr>
+<tr>
+<td><strong>Delay API</strong></td>
+<td>Control de límite de tasa</td>
+<td>0-10 segundos entre llamadas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-escribiendo-casos-de-negocio-efectivos">2.2 Escribiendo Casos de Negocio Efectivos </h3>
+<blockquote>
+<p><strong>Mejor Práctica:</strong> Incluir problema, contexto y resultado deseado.</p>
+</blockquote>
+<p><strong>Buen Ejemplo:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Necesitamos modernizar nuestra plataforma de servicio al cliente. 
+Actualmente, nuestro equipo de soporte usa 5 herramientas desconectadas, 
+resultando en tiempos de respuesta promedio de 15 minutos. Queremos 
+consolidar en una solución cloud-native unificada con respuestas 
+asistidas por IA, apuntando a resolución en menos de 2 minutos.
+</code></pre><p><strong>Mal Ejemplo:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Construyan algo en la nube.
+</code></pre><hr>
+<h2 id="3-entendiendo-el-pipeline-de-agentes">3. Entendiendo el Pipeline de Agentes </h2>
+<h3 id="31-etapas-de-procesamiento">3.1 Etapas de Procesamiento </h3>
+<p>Al hacer clic en <strong>"Iniciar Workflow de Agente"</strong>, el sistema ejecuta:</p>
+<div class="mermaid">gantt
+    title Línea de Tiempo del Pipeline de Agentes
+    dateFormat X
+    axisFormat %s
+
+    section Investigación
+    Agente KYC           :a1, 0, 15s
+    Infografía KYC       :a2, after a1, 5s
+
+    section Análisis
+    Analista de Negocio  :b1, after a2, 10s
+    Infografía Negocio   :b2, after b1, 5s
+
+    section Diseño
+    Agente Arquitecto    :c1, after b2, 15s
+    Bucle de Validación  :c2, after c1, 5s
+    Infografía Arq.      :c3, after c2, 5s
+
+    section Espera
+    Aprobación Usuario   :milestone, after c3, 0
+    
+    section Generación
+    Escritor Propuesta   :d1, after c3, 10s
+    Imagen Portada       :d2, after d1, 5s
+    Auditoría SMART      :d3, after d2, 5s
+    Auto-Corrección      :d4, after d3, 5s
+</div><h3 id="32-bucle-de-evaluación-smart">3.2 Bucle de Evaluación SMART </h3>
+<p>Después de la generación de propuesta, el <strong>Auditor SMART</strong> evalúa la calidad:</p>
+<div class="mermaid">flowchart LR
+    A[📄 Borrador] --&gt; B[✅ Auditoría SMART]
+    B --&gt; C{¿Puntaje ≥ 90?}
+    C --&gt;|No| D[🔄 Auto-Corrección]
+    D --&gt; A
+    C --&gt;|Sí| E[📋 Final]
+</div><p><strong>Criterios SMART (Puntaje 0-100):</strong></p>
+<table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Qué Evalúa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S</strong>pecific (Específico)</td>
+<td>¿Los objetivos y entregables están claramente definidos?</td>
+</tr>
+<tr>
+<td><strong>M</strong>easurable (Medible)</td>
+<td>¿Hay métricas de éxito cuantificables?</td>
+</tr>
+<tr>
+<td><strong>A</strong>chievable (Alcanzable)</td>
+<td>¿El alcance es realista con los recursos disponibles?</td>
+</tr>
+<tr>
+<td><strong>R</strong>elevant (Relevante)</td>
+<td>¿Está alineado con necesidades del negocio y ROI?</td>
+</tr>
+<tr>
+<td><strong>T</strong>ime-bound (Temporal)</td>
+<td>¿Los hitos y cronogramas son explícitos?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Nota:</strong> Si el puntaje &lt; 90 o se encuentran problemas críticos, la propuesta se regenera automáticamente con correcciones.</p>
+</blockquote>
+<h3 id="33-consola-del-agente">3.3 Consola del Agente </h3>
+<p>Durante el procesamiento, la <strong>Consola del Agente</strong> muestra actividad en tiempo real:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo de Log</th>
+<th>Color</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>INFO</code></td>
+<td>Gris</td>
+<td>Mensajes del sistema</td>
+</tr>
+<tr>
+<td><code>THINKING</code></td>
+<td>Azul</td>
+<td>Razonamiento del agente</td>
+</tr>
+<tr>
+<td><code>SUCCESS</code></td>
+<td>Verde</td>
+<td>Tarea completada</td>
+</tr>
+<tr>
+<td><code>ERROR</code></td>
+<td>Rojo</td>
+<td>Problema ocurrido</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-trabajando-con-resultados">4. Trabajando con Resultados </h2>
+<h3 id="41-navegación-de-pestañas-de-resultados">4.1 Navegación de Pestañas de Resultados </h3>
+<div class="mermaid">graph LR
+    A[📊 Negocio] --&gt; B[🏗️ Arquitectura]
+    B --&gt; C[📄 Propuesta]
+    C --&gt; D[💰 Costos]
+    D --&gt; E[🧠 Metacognición]
+    E --&gt; F[📋 Logs]
+</div><h3 id="42-descripción-de-pestañas">4.2 Descripción de Pestañas </h3>
+<h4 id="-pestaña-negocio">📊 Pestaña Negocio </h4>
+<ul>
+<li><strong>Declaración del Problema:</strong> Sintetizado de tu entrada</li>
+<li><strong>Análisis de Causa Raíz:</strong> Por qué existe el problema</li>
+<li><strong>Fallas de Proceso:</strong> Puntos de dolor actuales</li>
+<li><strong>Análisis ROI:</strong> Valor de negocio esperado</li>
+<li><strong>Historias de Usuario:</strong> Requerimientos derivados</li>
+<li><strong>Diagrama de Proceso:</strong> Visualización de flujo Mermaid</li>
+</ul>
+<h4 id="️-pestaña-arquitectura">🏗️ Pestaña Arquitectura </h4>
+<ul>
+<li><strong>Resumen:</strong> Descripción de alto nivel de la solución</li>
+<li><strong>Componentes Clave:</strong> Stack tecnológico</li>
+<li><strong>Justificación:</strong> Razones del diseño</li>
+<li><strong>Diagrama de Arquitectura:</strong> Visualización Mermaid</li>
+<li><strong>Botón Reejecutar:</strong> Regenerar con contexto actualizado</li>
+</ul>
+<h4 id="-pestaña-propuesta">📄 Pestaña Propuesta </h4>
+<ul>
+<li>Documento Markdown completo</li>
+<li>Imagen de portada con logos</li>
+<li>Secciones expandibles</li>
+<li>Capacidad de edición por sección</li>
+<li>Exportar al portapapeles/descargar</li>
+</ul>
+<h4 id="-pestaña-costos">💰 Pestaña Costos </h4>
+<ul>
+<li><strong>Plan Semanal:</strong> Asignaciones de roles por semana</li>
+<li><strong>Editor Interactivo:</strong> Modificar horas directamente</li>
+<li><strong>Indicadores de Estrés:</strong> Análisis de carga de trabajo</li>
+<li><strong>Análisis de Fricción:</strong> Advertencias de cronograma agresivo</li>
+<li><strong>Visualización de Costos:</strong> Infografía generada por IA</li>
+</ul>
+<h4 id="-pestaña-metacognición">🧠 Pestaña Metacognición </h4>
+<ul>
+<li><strong>Perspectiva del Cliente:</strong> Modelo mental del cliente</li>
+<li><strong>Perspectiva Nubiral:</strong> Nuestra visión de entrega</li>
+<li><strong>Perspectiva de la Propuesta:</strong> Promesas del documento</li>
+<li><strong>Matriz de Consonancia:</strong> Puntuación de alineación (1-5)</li>
+<li><strong>Alertas de Disonancia:</strong> Advertencias de riesgo</li>
+<li><strong>Gestión de Tensiones:</strong> Recomendaciones de equilibrio</li>
+</ul>
+<h3 id="43-usando-la-función-expandir">4.3 Usando la Función Expandir </h3>
+<p>Cada sección tiene un <strong>icono de lupa</strong> (🔍) para expansión profunda:</p>
+<div class="mermaid">flowchart LR
+    A[📄 Sección] --&gt; B[🔍 Click Expandir]
+    B --&gt; C[Configurar Opciones]
+    C --&gt; D[IA Genera Detalle]
+    D --&gt; E[Vista Expandida Agregada]
+</div><p><strong>Opciones:</strong></p>
+<ul>
+<li><strong>Instrucción Personalizada:</strong> Guiar el enfoque de expansión</li>
+<li><strong>Densidad:</strong> Baja (breve), Media, Alta (exhaustiva)</li>
+</ul>
+<hr>
+<h2 id="5-gestión-de-sesiones">5. Gestión de Sesiones </h2>
+<h3 id="51-guardando-tu-trabajo">5.1 Guardando Tu Trabajo </h3>
+<ol>
+<li>Clic en <strong>💾 Guardar</strong> en la cabecera superior derecha</li>
+<li>La sesión se almacena localmente en tu navegador</li>
+<li>Nombrada automáticamente por el nombre de la empresa</li>
+</ol>
+<h3 id="52-cargando-una-sesión">5.2 Cargando una Sesión </h3>
+<ol>
+<li>Clic en <strong>📁</strong> (icono de carpeta) en la esquina superior izquierda</li>
+<li>Se abre la barra lateral de sesiones</li>
+<li>Clic en cualquier tarjeta de sesión para cargar</li>
+<li>Todo el estado se restaura (incluyendo imágenes)</li>
+</ol>
+<h3 id="53-funciones-de-la-barra-lateral-de-sesiones">5.3 Funciones de la Barra Lateral de Sesiones </h3>
+<div class="mermaid">graph TB
+    subgraph Sidebar["Gestor de Sesiones"]
+        NEW[➕ Nueva Propuesta]
+        LIST[Tarjetas de Sesión]
+        ACTIVE[Badge Activo]
+        DELETE[🗑️ Eliminar]
+    end
+</div><table>
+<thead>
+<tr>
+<th>Acción</th>
+<th>Cómo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nueva Sesión</td>
+<td>Clic en botón "Nueva Propuesta"</td>
+</tr>
+<tr>
+<td>Cargar Sesión</td>
+<td>Clic en tarjeta de sesión</td>
+</tr>
+<tr>
+<td>Eliminar Sesión</td>
+<td>Hover + clic en icono de papelera</td>
+</tr>
+<tr>
+<td>Identificar Activa</td>
+<td>Buscar badge "Activo"</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-funciones-avanzadas">6. Funciones Avanzadas </h2>
+<h3 id="61-regenerando-arquitectura">6.1 Regenerando Arquitectura </h3>
+<p>Después de modificar datos de KYC o Caso de Negocio:</p>
+<ol>
+<li>Navegar a pestaña <strong>Arquitectura</strong></li>
+<li>Clic en <strong>"Reejecutar Análisis (Actualizar)"</strong></li>
+<li>El agente regenera con el contexto actual</li>
+</ol>
+<div class="mermaid">flowchart LR
+    A[Editar Caso de Negocio] --&gt; B[Click Reejecutar]
+    B --&gt; C[Arquitectura Regenerada]
+    C --&gt; D[Nueva Infografía Generada]
+</div><h3 id="62-editor-de-estimación-de-costos">6.2 Editor de Estimación de Costos </h3>
+<p>Modificación interactiva de costos:</p>
+<div class="mermaid">flowchart TD
+    A[Ver Plan de Costos] --&gt; B[Click en Fila de Rol]
+    B --&gt; C[Modificar Horas Semanales]
+    C --&gt; D[Totales Auto-Calculan]
+    D --&gt; E[Click Refinar]
+    E --&gt; F[IA Valida Cambios]
+</div><h3 id="63-widget-de-chat-asistente-experto">6.3 Widget de Chat (Asistente Experto) </h3>
+<p>Disponible en la vista de Resultados para:</p>
+<ul>
+<li>Preguntas de arquitectura</li>
+<li>Regenerar imágenes</li>
+<li>Expandir secciones</li>
+<li>Modificaciones de diseño</li>
+</ul>
+<hr>
+<h2 id="7-mejores-prácticas">7. Mejores Prácticas </h2>
+<h3 id="71-para-mejores-resultados">7.1 Para Mejores Resultados </h3>
+<table>
+<thead>
+<tr>
+<th>Hacer</th>
+<th>No Hacer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ Proporcionar contexto de negocio detallado</td>
+<td>❌ Usar descripciones vagas</td>
+</tr>
+<tr>
+<td>✅ Especificar industria y restricciones</td>
+<td>❌ Omitir requisitos regulatorios</td>
+</tr>
+<tr>
+<td>✅ Guardar frecuentemente</td>
+<td>❌ Confiar en el estado del navegador</td>
+</tr>
+<tr>
+<td>✅ Usar densidad de contexto apropiada</td>
+<td>❌ Usar siempre "Alta" (desperdicia tokens)</td>
+</tr>
+<tr>
+<td>✅ Revisar y editar salidas de IA</td>
+<td>❌ Aceptar sin revisar</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-recomendaciones-de-flujo-de-trabajo">7.2 Recomendaciones de Flujo de Trabajo </h3>
+<div class="mermaid">flowchart TD
+    A[1. Comenzar con Densidad Alta] --&gt; B[2. Revisar Resultados KYC]
+    B --&gt; C{¿Preciso?}
+    C --&gt;|No| D[Editar/Expandir Secciones]
+    D --&gt; B
+    C --&gt;|Sí| E[3. Revisar Análisis de Negocio]
+    E --&gt; F[4. Verificar Arquitectura]
+    F --&gt; G{¿Alineado?}
+    G --&gt;|No| H[Click Reejecutar]
+    H --&gt; F
+    G --&gt;|Sí| I[5. Generar Propuesta]
+    I --&gt; J[6. Ejecutar Estimación de Costos]
+    J --&gt; K[7. Analizar Metacognición]
+    K --&gt; L[8. Guardar Sesión]
+</div><hr>
+<h2 id="8-solución-de-problemas">8. Solución de Problemas </h2>
+<h3 id="81-problemas-comunes">8.1 Problemas Comunes </h3>
+<table>
+<thead>
+<tr>
+<th>Problema</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Error de límite de API</td>
+<td>Aumentar slider "Delay de API"</td>
+</tr>
+<tr>
+<td>Secciones vacías</td>
+<td>Reducir densidad de contexto, reintentar</td>
+</tr>
+<tr>
+<td>Falla generación de imagen</td>
+<td>Cambiar a modelo Flash</td>
+</tr>
+<tr>
+<td>Sesión no carga</td>
+<td>Verificar cuota de IndexedDB del navegador</td>
+</tr>
+<tr>
+<td>Diagrama Mermaid roto</td>
+<td>Reportar al equipo BSA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-recuperación-de-errores">8.2 Recuperación de Errores </h3>
+<div class="mermaid">flowchart TD
+    A[Ocurre Error] --&gt; B{¿Tipo?}
+    B --&gt;|Límite de Tasa| C[Esperar 60s + Reintentar]
+    B --&gt;|Falla Validación| D[Verificar Caso de Negocio]
+    B --&gt;|Falla Generación| E[Cambiar Modelo]
+    B --&gt;|Falla Carga| F[Limpiar IndexedDB]
+</div><h3 id="83-limpiando-datos">8.3 Limpiando Datos </h3>
+<p>Para reiniciar la aplicación:</p>
+<ol>
+<li>Abrir DevTools del navegador (F12)</li>
+<li>Ir a <strong>Application</strong> → <strong>IndexedDB</strong></li>
+<li>Eliminar <code>nubi_proposals_db</code></li>
+<li>Refrescar la página</li>
+</ol>
+<hr>
+<h2 id="-soporte">📞 Soporte </h2>
+<p>Para problemas o solicitudes de funciones, contactar al <strong>Equipo BSA de Nubiral</strong>.</p>
+<hr>
+<p align="center">
+<strong>Guía de Usuario Nubiral BSA v2.0</strong><br>
+<em>Potenciando la Excelencia Técnica con IA</em>
+</p>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

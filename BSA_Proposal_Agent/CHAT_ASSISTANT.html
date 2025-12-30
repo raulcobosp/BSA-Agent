@@ -1,0 +1,382 @@
+<!DOCTYPE html><html><head>
+      <title>CHAT_ASSISTANT</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\david\.antigravity\extensions\shd101wyy.markdown-preview-enhanced-0.8.20-universal\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:///c:\Users\david\.antigravity\extensions\shd101wyy.markdown-preview-enhanced-0.8.20-universal\crossnote\dependencies\mermaid\mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="nubiral-bsa--chat-assistant-reference">Nubiral BSA – Chat Assistant Reference </h1>
+<blockquote>
+<p><strong>Expert Assistant Capabilities &amp; Context Guide</strong><br>
+Version 2.0 | December 2024</p>
+</blockquote>
+<hr>
+<h2 id="-overview">🤖 Overview </h2>
+<p>The <strong>Nubiral BSA Expert</strong> is a <strong>supportive guide</strong> embedded in the results view. Its primary role is to help users understand and use the tool effectively—like a senior BSA consultant sitting next to them.</p>
+<h3 id="key-philosophy">Key Philosophy: </h3>
+<ul>
+<li>✅ <strong>Explains</strong> what users see in each tab</li>
+<li>✅ <strong>Guides</strong> through the workflow step by step</li>
+<li>✅ <strong>Answers questions</strong> about generated artifacts</li>
+<li>⚠️ <strong>Only acts when explicitly asked</strong>—no automatic triggers</li>
+<li>❌ <strong>Never chains actions</strong> (updating architecture does NOT auto-generate proposal)</li>
+</ul>
+<div class="mermaid">graph TB
+    subgraph Context["📊 Available Context"]
+        KYC[🔍 KYC Research]
+        BIZ[📈 Business Analysis]
+        ARCH[🏗️ Solution Design]
+        COST[💰 Cost Estimation]
+        LOGS[📋 Agent Logs]
+        PROP[📄 Proposal Markdown]
+    end
+
+    subgraph Assistant["🤖 BSA Expert"]
+        AI[Gemini Flash Model]
+        HIST[Chat History]
+        TOOLS[Tool Calling]
+    end
+
+    subgraph Actions["⚡ Available Actions"]
+        IMG[🖼️ Regenerate Image]
+        EXP[🔍 Expand Section]
+        UPD[✏️ Update Design]
+    end
+
+    Context --&gt; Assistant
+    Assistant --&gt; Actions
+</div><hr>
+<h2 id="-context-access">📚 Context Access </h2>
+<p>The assistant has <strong>read access</strong> to the following artifacts:</p>
+<table>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>What It Knows</th>
+<th>Example Questions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>KYC Research</strong></td>
+<td>Company summary, SWOT, strategic goals, industry landscape, competitors</td>
+<td>"What are the main risks identified in the KYC?"</td>
+</tr>
+<tr>
+<td><strong>Business Analysis</strong></td>
+<td>Problem statement, root causes, ROI projections, user stories</td>
+<td>"Explain the expected ROI breakdown"</td>
+</tr>
+<tr>
+<td><strong>Solution Design</strong></td>
+<td>Architecture overview, key components, Mermaid diagram, rationale</td>
+<td>"Why did you choose EKS over ECS?"</td>
+</tr>
+<tr>
+<td><strong>Cost Estimation</strong></td>
+<td>Role allocations, weekly hours, stress indicators, total cost</td>
+<td>"Which role has the highest workload?"</td>
+</tr>
+<tr>
+<td><strong>Agent Logs</strong></td>
+<td>Last 30 non-info logs showing agent reasoning and decisions</td>
+<td>"What issues did the validator find?"</td>
+</tr>
+<tr>
+<td><strong>Proposal</strong></td>
+<td>Full generated Markdown document</td>
+<td>"Summarize the implementation timeline"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Anti-Hallucination:</strong> The assistant explicitly checks which data is available and will inform you if a section hasn't been generated yet.</p>
+</blockquote>
+<hr>
+<h2 id="-embedded-system-documentation">📖 Embedded System Documentation </h2>
+<p>The assistant has <strong>built-in knowledge</strong> of:</p>
+<table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>README</strong></td>
+<td>Feature overview, pipeline flow, SMART loop explanation</td>
+</tr>
+<tr>
+<td><strong>SYSTEM_SPEC</strong></td>
+<td>Agent functions, context density, user workflow, available tabs</td>
+</tr>
+</tbody>
+</table>
+<p>This allows it to answer questions like:</p>
+<ul>
+<li>"How do I generate a proposal?"</li>
+<li>"What does the SMART evaluation do?"</li>
+<li>"Which tab shows the cost breakdown?"</li>
+</ul>
+<hr>
+<h2 id="-available-tools-actions">⚡ Available Tools (Actions) </h2>
+<p>The assistant can execute <strong>3 actions</strong> on your behalf via tool calling:</p>
+<h3 id="1-️-regenerate-visual-asset">1. 🖼️ Regenerate Visual Asset </h3>
+<div class="mermaid">flowchart LR
+    A[User Request] --&gt; B[regenerate_visual_asset]
+    B --&gt; C{Asset Type}
+    C --&gt;|cover| D[Cover Image]
+    C --&gt;|concept| E[Concept Image]
+    C --&gt;|infographic| F[Infographic]
+    D &amp; E &amp; F --&gt; G[New Image Generated]
+</div><p><strong>Trigger:</strong> "Please regenerate the cover image with a more modern style"</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>asset_type</code></td>
+<td>enum</td>
+<td><code>cover</code>, <code>concept</code>, or <code>infographic</code></td>
+</tr>
+<tr>
+<td><code>instruction</code></td>
+<td>string</td>
+<td>Optional styling/content guidance</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="2--expand-kyc-section">2. 🔍 Expand KYC Section </h3>
+<div class="mermaid">flowchart LR
+    A[User Request] --&gt; B[expand_kyc_section]
+    B --&gt; C[Deep Dive Research]
+    C --&gt; D[Expanded Content Added]
+</div><p><strong>Trigger:</strong> "Can you provide more detail on the regulatory constraints?"</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>section_name</code></td>
+<td>string</td>
+<td>KYC section to expand (e.g., "regulatoryConstraints")</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="3-️-update-solution-design">3. ✏️ Update Solution Design </h3>
+<div class="mermaid">flowchart LR
+    A[User Request] --&gt; B[update_solution_design]
+    B --&gt; C[Design Updated]
+    C --&gt; D[Mermaid Diagram Refreshed]
+</div><p><strong>Trigger:</strong> "Add a Redis caching layer to the architecture"</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mermaid_code</code></td>
+<td>string</td>
+<td>Updated Mermaid diagram code</td>
+</tr>
+<tr>
+<td><code>architecture_overview</code></td>
+<td>string</td>
+<td>Optional new overview text</td>
+</tr>
+<tr>
+<td><code>rationale</code></td>
+<td>string</td>
+<td>Optional update rationale</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-example-conversations">💬 Example Conversations </h2>
+<h3 id="understanding-decisions">Understanding Decisions </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>You: Why did the architect choose AWS Lambda over ECS for the processing layer?
+
+Expert: Based on the business analysis, the key driver was cost optimization 
+for variable workloads. The agent logs show:
+
+[THINKING] Evaluating compute options for batch processing...
+[SUCCESS] Lambda selected - aligns with pay-per-execution model and 
+expected 2000 daily invocations.
+
+The rationale emphasizes the client's requirement for minimal operational 
+overhead, which Lambda provides with its fully managed infrastructure.
+</code></pre><h3 id="requesting-changes">Requesting Changes </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>You: Add a message queue between the API Gateway and Lambda
+
+Expert: I'll update the architecture to include an SQS queue for decoupling. 
+This will improve resilience and allow for better load handling.
+
+[Tool Called: update_solution_design]
+✅ Design updated. The Mermaid diagram now shows:
+API Gateway → SQS Queue → Lambda → DynamoDB
+</code></pre><h3 id="regenerating-assets">Regenerating Assets </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>You: The cover image looks too generic. Make it more futuristic with 
+a focus on cloud infrastructure.
+
+Expert: I'll regenerate the cover with your specifications.
+
+[Tool Called: regenerate_visual_asset]
+✅ Cover image regenerated with futuristic cloud theme.
+</code></pre><hr>
+<h2 id="-how-it-works">🧠 How It Works </h2>
+<div class="mermaid">sequenceDiagram
+    participant U as User
+    participant C as ChatWidget
+    participant G as Gemini Flash
+    participant T as Tool Executor
+    participant S as State Manager
+
+    U-&gt;&gt;C: Send Message
+    C-&gt;&gt;G: Message + History + Context
+    G-&gt;&gt;G: Analyze &amp; Decide
+    alt Tool Call Needed
+        G-&gt;&gt;T: Execute Tool
+        T-&gt;&gt;S: Update State
+        T-&gt;&gt;G: Tool Result
+        G-&gt;&gt;C: Final Response
+    else Direct Response
+        G-&gt;&gt;C: Text Response
+    end
+    C-&gt;&gt;U: Display Response
+</div><hr>
+<h2 id="️-limitations">⚠️ Limitations </h2>
+<table>
+<thead>
+<tr>
+<th>Limitation</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Read-Only Business Analysis</strong></td>
+<td>Cannot modify business analysis directly</td>
+</tr>
+<tr>
+<td><strong>No Proposal Editing</strong></td>
+<td>Cannot edit proposal markdown (use section editors)</td>
+</tr>
+<tr>
+<td><strong>No Cost Modification</strong></td>
+<td>Cannot change cost allocations via chat</td>
+</tr>
+<tr>
+<td><strong>Context Window</strong></td>
+<td>Last 30 log entries only (to save tokens)</td>
+</tr>
+<tr>
+<td><strong>Rate Limits</strong></td>
+<td>Subject to Gemini API rate limits</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-access-location">📍 Access Location </h2>
+<p>The chat assistant is available as a <strong>floating button</strong> in the bottom-right corner when viewing results:</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>┌─────────────────────────────────────┐
+│           Results View              │
+│                                     │
+│  [KYC] [Business] [Design] ...      │
+│                                     │
+│                                     │
+│                     ┌───────────┐   │
+│                     │ 💬 Expert │   │
+│                     └───────────┘   │
+└─────────────────────────────────────┘
+</code></pre><p>Click to open the chat window. Press <strong>Enter</strong> to send messages.</p>
+<hr>
+<p align="center">
+<strong>Nubiral BSA Chat Assistant v2.0</strong>
+</p>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

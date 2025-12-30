@@ -1,0 +1,58 @@
+ROLES	 Venta Sugerido 
+Delivery Manager	USD 99.36
+Service Delivery Manager	USD 74.88
+Tech Manager	USD 118.08
+Tech Leader	USD 92.16
+Subject Matter Expert	USD 92.16
+Solution Architect SR	USD 97.92
+Solution Architect SSR	USD 82.08
+Cloud Engineer SR	USD 77.76
+Cloud Engineer SSR	USD 64.80
+Cloud Engineer JR	USD 46.08
+DevOps Engineer SR	USD 77.76
+DevOps Engineer SSR	USD 64.80
+DevOps Engineer JR	USD 46.08
+DataOps Engineer SR	USD 77.76
+DataOps Engineer SSR	USD 64.80
+DataOps Engineer JR	USD 46.08
+Cloud Engineer Trainee	USD 34.56
+Data Architect SR (DBA)	USD 86.40
+Data Architect SSR (DBA)	USD 72.00
+Data Engineer SR	USD 74.88
+Data Engineer SSR	USD 63.36
+Data Engineer JR	USD 46.08
+Data Scientist SR	USD 77.76
+Data Scientist SSR	USD 64.80
+FrontEnd Sr	USD 70.56
+FrontEnd Ssr	USD 61.92
+FrontEnd Jr	USD 48.96
+Backend Sr	USD 70.56
+Backend Ssr	USD 61.92
+Backend Jr	USD 48.96
+Security Architect	USD 82.08
+Security Engineer Sr	USD 76.32
+Security Engineer Ssr	USD 67.68
+Security Engineer Jr	USD 48.96
+Monitoring Architect	USD 70.56
+Monitoring Engineer Sr	USD 60.48
+Monitoring Engineer SSr	USD 50.40
+Analista Funcional Sr	USD 60.48
+Analista Funcional SSr	USD 56.16
+Business Analyst Sr	USD 60.48
+Business Analyst Ssr	USD 50.40
+SysAdmin Sr	USD 66.24
+SysAdmin Ssr	USD 50.40
+SysAdmin Jr	USD 43.20
+Trainee IT	USD 31.68
+QA Manual Sr	USD 57.60
+QA Manual SSr	USD 53.28
+QA Manual Jr	USD 44.64
+TAE Sr	USD 67.68
+TAE Ssr	USD 57.60
+TAE Jr	USD 44.64
+UX Designer Sr	USD 72.00
+UX Designer Ssr	USD 61.92
+UX Designer Jr	USD 44.64
+Site Reliability Engineer Sr	USD 87.84
+Site Reliability Engineer SSr	USD 74.88
+Site Reliability Engineer Jr	USD 60.48
